@@ -3,21 +3,19 @@ package Work;
 import java.io.*;
 import java.util.*;
 
-public class Array_Download {
-    public static String[] word = new String[3];   // изначальный массив данных
+public class Array_Download {                        // класс, загружающий массив слов в ArrayList
+    //public static String[] word = new String[3];   // изначальный массив данных
+
+    public static List<String> word = new ArrayList<>();
 
     public static void arrayDownload() throws FileNotFoundException {
         File file = new File("words");
 
         Scanner scanner = new Scanner(file);
-        int i = 0;
 
         while (scanner.hasNextLine()) {
-            word[i] = scanner.nextLine();
-            i++;
+            word.add(scanner.nextLine());
         }
-
-        //System.out.println(Arrays.toString(word));
         scanner.close();
     }
 }

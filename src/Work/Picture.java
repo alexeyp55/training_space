@@ -1,6 +1,6 @@
 package Work;
 
-public class Picture {
+public class Picture {                                                          // класс отрисовки виселицы
     public static void pictureDraw(int i){
         switch (i) {
             case 0:
