@@ -27,7 +27,7 @@ public class InputLetter {
                 printMessage("single_char_required");
             }
         }
-        symbol = Character.toLowerCase(symbol);                                             // приводим символ к одному регистру
+        symbol = Character.toUpperCase(symbol);                                             // приводим символ к одному регистру
         return symbol;
     }
 

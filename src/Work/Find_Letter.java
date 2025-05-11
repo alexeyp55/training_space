@@ -17,8 +17,8 @@ public class Find_Letter {                                              // кл�
         character = inputChar();
 
         for (int i = 0; i< result.length(); i++) {                      // цикл, для перебирания букв в слове
-            if (word.get(random).charAt(i) == character) {              // проверяем, равно ли i-ая буква нашему выбранному символу
-                sb.setCharAt(i, Character.toUpperCase(character));      // если да, меняем в ней i-ый символ на character
+            if ( Character.toUpperCase(word.get(random).charAt(i)) == character) {              // проверяем, равно ли i-ая буква нашему выбранному символу
+                sb.setCharAt(i, character);      // если да, меняем в ней i-ый символ на character
                 isFinded = true;
             }
         }
